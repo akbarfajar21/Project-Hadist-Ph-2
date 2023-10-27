@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-color: #13bbff;
+}
+
+.btn-my-hadits {
+    width: 200px;
+}
+
+#output{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+}
+
+.card-hadits{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 15px;
+    border-radius: 7px;
+    text-align: center;
+
+}
+
+
+
+.arab{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0,0,0, 0.24) 0px 3px 8px;
+}
+
+.text-hadits{
+    white-space: normal;
+    text-align: justify;
+}
+
+.card-hadits:hover{
+    color: var(--main-color);
+    text-shadow: 3px 3px 20px var(--main-color);
+}
+
+.home{
+    width: 100%;
+    background-position: center;
+    background-image: url(images/foto-masjid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width:991px) {
+    .img-hadits{
+        height: 400px;
+    }
+}
